@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA28F1BD-A22E-47E7-AFA1-2AA62501AFE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Biblioteca</RootNamespace>
+    <AssemblyName>Biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="frm_EditarExemplares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EditarExemplares.Designer.cs">
+      <DependentUpon>frm_EditarExemplares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alura.Designer.cs">
+      <DependentUpon>frm_Alura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultarSolicitacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultarSolicitacao.Designer.cs">
+      <DependentUpon>frm_ConsultarSolicitacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EditarPefilClietne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EditarPefilClietne.Designer.cs">
+      <DependentUpon>frm_EditarPefilClietne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ManterClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ManterClientes.Designer.cs">
+      <DependentUpon>frm_ManterClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ManterExemplares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ManterExemplares.Designer.cs">
+      <DependentUpon>frm_ManterExemplares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MenuADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MenuADM.Designer.cs">
+      <DependentUpon>frm_MenuADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MostrarTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MostrarTitulo.Designer.cs">
+      <DependentUpon>frm_MostrarTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PerfilCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PerfilCliente.Designer.cs">
+      <DependentUpon>frm_PerfilCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Usuario.Designer.cs">
+      <DependentUpon>frm_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Alura.resx">
+      <DependentUpon>frm_Alura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultarSolicitacao.resx">
+      <DependentUpon>frm_ConsultarSolicitacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EditarExemplares.resx">
+      <DependentUpon>frm_EditarExemplares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EditarPefilClietne.resx">
+      <DependentUpon>frm_EditarPefilClietne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ManterClientes.resx">
+      <DependentUpon>frm_ManterClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ManterExemplares.resx">
+      <DependentUpon>frm_ManterExemplares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MenuADM.resx">
+      <DependentUpon>frm_MenuADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MostrarTitulo.resx">
+      <DependentUpon>frm_MostrarTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PerfilCliente.resx">
+      <DependentUpon>frm_PerfilCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Usuario.resx">
+      <DependentUpon>frm_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coruja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagemperfil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anexo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
